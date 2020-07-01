@@ -1,10 +1,11 @@
 {
   "name": "vuepress-timeline-c",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "private": false,
+  "main": "./dist/vuepress-timeline-c.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vuepress-timeline-c ./src/components/index.js",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
@@ -26,5 +27,12 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ]
 }

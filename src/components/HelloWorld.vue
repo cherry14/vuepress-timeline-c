@@ -1,7 +1,15 @@
+<!--
+ * @Page: 
+ * @Version: 1.0.0
+ * @Autor: xumeng
+ * @Date: 2020-05-31 16:23:02
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-05-31 17:19:49
+--> 
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
+   <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
@@ -34,12 +42,14 @@
 </template>
 
 <script>
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
-}
+  },
+  
+ }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
