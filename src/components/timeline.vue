@@ -5,22 +5,19 @@
  * @Autor: xumeng
  * @Date: 2020-04-26 16:55:07
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-07-01 12:36:42
+ * @LastEditTime: 2020-07-01 14:37:55
  -->
 
 <template>
-  <div class="time">
-    <div class="text-content">
+   <div class="time-container">
       <div :class="themeColor">
         <div  v-for="(item, index) in testList" :key="index" :class="`time-line-div ${location}`">
           <p>{{item.time}}</p>
           <p class="circle" ref="circular"></p>
           <p>{{item.text}}</p>
         </div>
-        <!-- <div class="img-dotted" ref="dotted"></div> -->
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -35,7 +32,7 @@ export default {
     // 布局模式
     mode: {
       type: String,
-      default: 'right'
+      default: 'alternate'
     },
     // 主题颜色
     theme: {
@@ -72,16 +69,12 @@ $lightContentbgColor:linear-gradient(0deg, pink 0%, rgb(245, 205, 223) 100%);
 $timeColor: #333;
 $lightTimeColor: rgb(212, 102, 153);
 $circleColor: #999;
-$lightCircleColor: rgb(180, 223, 152);;
-.text-center {
-  text-align: center;
-}
-.time h2 {
-  color: #ff6600;
-  margin: 20px auto 30px auto;
+$lightCircleColor: rgb(180, 223, 152);
+.time-container {
+  width: 100%;
+  display: flex;
 }
 .time-line-light {
-  width: 500px;
   margin: 20px auto;
   color: $lightTimeColor;
   // background-color: #eee;
@@ -101,9 +94,13 @@ $lightCircleColor: rgb(180, 223, 152);;
       z-index: 10;
     }
      p:nth-child(3) {
+      width:185px;
+      word-break:break-all; // 英文换行
+      white-space:pre-wrap; // 中文换行
       padding: 10px;
       background: $lightContentbgColor;
       font-size: 0.8rem;
+      text-align: left;
       color: #fff;
       border-radius: 10px;
     }
@@ -128,11 +125,14 @@ $lightCircleColor: rgb(180, 223, 152);;
       justify-content: flex-end;
       &:nth-child(odd) {
         flex-direction: row-reverse;
+        margin-right: 180px;
+      }
+       &:nth-child(even) {
+        margin-left: 180px;
       }
     }
 }
 .time-line-dark {
- width: 500px;
   margin: 20px auto;
   color: $timeColor;
   // background-color: #eee;
