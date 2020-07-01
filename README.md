@@ -4,7 +4,7 @@
  * @Autor: xumeng
  * @Date: 2020-05-31 16:23:51
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-07-01 16:01:15
+ * @LastEditTime: 2020-07-01 16:05:27
 --> 
 # vuepress-timeline-c
 
@@ -31,6 +31,8 @@ components: {
 <!-- 上下文代码 -->
 ------
 <time-line-c :testList="array"/>
+<time-line-c :testList="array" :mode="alternate"/>
+<time-line-c :testList="array" :mode="right" :theme="dark" />
 -----
 <!-- 上下文代码 -->
 ```
