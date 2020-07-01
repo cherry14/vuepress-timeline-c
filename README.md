@@ -4,7 +4,7 @@
  * @Autor: xumeng
  * @Date: 2020-05-31 16:23:51
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-07-01 11:57:39
+ * @LastEditTime: 2020-07-01 15:19:05
 --> 
 # vuepress-timeline-c
 
@@ -55,3 +55,17 @@ data() {
     }
 }
 ```
+
+## Props
+| 参数      | 介绍           |  类型   |      可选值        | 默认值 |
+| -------  | -------------- | ------  | ------------       | ------  |
+| testList     | 传入数组        | Array   | -                 | [ ]       |
+| mode     | 布局模式        | String   | left / right / alternate   | left      |
+| theme     | 主题颜色        | String   | dark / light              | light      |
+
+
+## Events
+| 事件      | 介绍           |  返回值   |      
+| -------  | -------------- | ------  | 
+| handleClick | 点击内容回调   |  item， index |
+

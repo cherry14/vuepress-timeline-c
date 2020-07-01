@@ -5,7 +5,7 @@
  * @Autor: xumeng
  * @Date: 2020-04-26 16:55:07
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-07-01 15:12:09
+ * @LastEditTime: 2020-07-01 15:18:08
  -->
 
 <template>
@@ -32,7 +32,7 @@ export default {
     // 布局模式
     mode: {
       type: String,
-      default: 'alternate'
+      default: 'left'
     },
     // 主题颜色
     theme: {
