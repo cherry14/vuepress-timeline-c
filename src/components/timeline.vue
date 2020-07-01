@@ -5,7 +5,7 @@
  * @Autor: xumeng
  * @Date: 2020-04-26 16:55:07
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-07-01 14:37:55
+ * @LastEditTime: 2020-07-01 15:06:15
  -->
 
 <template>
@@ -13,7 +13,7 @@
       <div :class="themeColor">
         <div  v-for="(item, index) in testList" :key="index" :class="`time-line-div ${location}`">
           <p>{{item.time}}</p>
-          <p class="circle" ref="circular"></p>
+          <p class="circle"></p>
           <p>{{item.text}}</p>
         </div>
       </div>
@@ -37,7 +37,7 @@ export default {
     // 主题颜色
     theme: {
       type: String,
-      default: 'light'
+      default: 'dark'
     }
   },
   computed: {
@@ -64,7 +64,7 @@ export default {
 
 <style scoped lang="scss">
 $contentColor: #333;
-$contentbgColor: #ccc;
+$contentbgColor: linear-gradient(0deg, #eee 0%, rgb(206, 197, 201) 100%);;
 $lightContentbgColor:linear-gradient(0deg, pink 0%, rgb(245, 205, 223) 100%);
 $timeColor: #333;
 $lightTimeColor: rgb(212, 102, 153);
@@ -103,6 +103,10 @@ $lightCircleColor: rgb(180, 223, 152);
       text-align: left;
       color: #fff;
       border-radius: 10px;
+      cursor: pointer;
+    }
+    p:nth-child(3):hover {
+      color:rgb(212, 143, 143)
     }
   }
   /**
@@ -152,12 +156,18 @@ $lightCircleColor: rgb(180, 223, 152);
       z-index: 10;
     }
      p:nth-child(3) {
+      width: 165px;
       padding: 10px;
+      text-align: left;
       background: $contentbgColor;
       font-size: 0.8rem;
-      color: #fff;
+      color: #666;
       border-radius: 10px;
-    }
+     cursor: pointer;
+      }
+      p:nth-child(3):hover {
+        color:#eee;
+      }
   }
   /**
   mode: left 样式
@@ -179,6 +189,10 @@ $lightCircleColor: rgb(180, 223, 152);
       justify-content: flex-end;
       &:nth-child(odd) {
         flex-direction: row-reverse;
+        margin-right: 180px;
+      }
+       &:nth-child(even) {
+        margin-left: 180px;
       }
     }
 }
