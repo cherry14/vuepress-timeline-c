@@ -4,7 +4,7 @@
  * @Autor: xumeng
  * @Date: 2020-05-31 16:23:51
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-07-01 15:58:08
+ * @LastEditTime: 2020-07-01 16:00:08
 --> 
 # vuepress-timeline-c
 
@@ -83,14 +83,14 @@ data() {
 ## 效果图
 > 主题（theme）
 - light
-![light](https://github.com/cherry14/vuepress-timeline-c/raw/master/assets/timeline5.png)
+![light](https://github.com/cherry14/vuepress-timeline-c/job/raw/master/assets/timeline5.png)
 - dark
-![dark](https://github.com/cherry14/vuepress-timeline-c/raw/master/assets/timeline1.png)
+![dark](https://github.com/cherry14/vuepress-timeline-c/job/raw/master/assets/timeline1.png)
 > 布局（mode）
 - left
-![left](https://github.com/cherry14/vuepress-timeline-c/raw/master/assets/timeline51.png)
+![left](https://github.com/cherry14/vuepress-timeline-c/job/raw/master/assets/timeline51.png)
 - right
-![right](https://github.com/cherry14/vuepress-timeline-c/raw/master/assets/timeline2.png)
+![right](https://github.com/cherry14/vuepress-timeline-c/job/raw/master/assets/timeline2.png)
 - alternate
-![alternate](https://github.com/cherry14/vuepress-timeline-c/raw/master/assets/timeline3.png)
+![alternate](https://github.com/cherry14/vuepress-timeline-c/job/raw/master/assets/timeline3.png)
 
