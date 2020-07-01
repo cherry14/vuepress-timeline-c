@@ -5,13 +5,13 @@
  * @Autor: xumeng
  * @Date: 2020-04-26 16:55:07
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-07-01 15:06:15
+ * @LastEditTime: 2020-07-01 15:12:09
  -->
 
 <template>
    <div class="time-container">
       <div :class="themeColor">
-        <div  v-for="(item, index) in testList" :key="index" :class="`time-line-div ${location}`">
+        <div  v-for="(item, index) in testList" @click="handleClick(item, index)" :key="index" :class="`time-line-div ${location}`">
           <p>{{item.time}}</p>
           <p class="circle"></p>
           <p>{{item.text}}</p>
@@ -57,6 +57,9 @@ export default {
       } else {
          return 'time-line-light'
       }
+    },
+    handleClick(item){
+      this.$emit('handleClick', item, index)
     }
   },
 };
