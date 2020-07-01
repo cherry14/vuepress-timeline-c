@@ -5,7 +5,7 @@
  * @Autor: xumeng
  * @Date: 2020-04-26 16:55:07
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-07-01 15:18:08
+ * @LastEditTime: 2020-07-01 15:33:55
  -->
 
 <template>
@@ -37,7 +37,7 @@ export default {
     // 主题颜色
     theme: {
       type: String,
-      default: 'dark'
+      default: 'light'
     }
   },
   computed: {

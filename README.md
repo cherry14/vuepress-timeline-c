@@ -4,7 +4,7 @@
  * @Autor: xumeng
  * @Date: 2020-05-31 16:23:51
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-07-01 15:26:29
+ * @LastEditTime: 2020-07-01 15:38:47
 --> 
 # vuepress-timeline-c
 
@@ -40,21 +40,33 @@ data() {
     return {
         array: [
             {
-                time:'2020-02-02',
-                text:'内容描述1'
+                text:'内容1rfrfrfrfrfrfrfrfrf分WFFFCEDFCEf',
+                time:'2020-02-02'
             },
             {
-                time:'2020-02-02',
-                text:'内容描述2'
+                text:'内容2frrrrrrrr',
+                time:'2020-02-02'
             },
             {
-                time:'2020-02-27',
-                text:'内容描述3'
+                text:'内容3frrrrrrgqerrrrrrrrrrr',
+                time:'2020-02-02'
             },
+            {
+                text:'内容4',
+                time:'2020-02-02',
+            },
+            {
+                text:'内容5dfewwwwwwwwwg',
+                time:'2020-02-02'
+            },
+            
         ]
     }
 }
 ```
+
+## 效果图
+![Image text]('./src/assets/timeline5.png')
 
 ## Props
 | 参数      | 介绍           |  类型   |      可选值        | 默认值 |
@@ -67,5 +79,5 @@ data() {
 ## Events
 | 事件      | 介绍           |  返回值   |      
 | -------  | -------------- | ------  | 
-| handleClick | 点击内容回调   |  item， index |
+| handleClick | 点击内容回调   |  item, index |
 
