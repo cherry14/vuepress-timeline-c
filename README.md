@@ -83,14 +83,14 @@ data() {
 ## 效果图
 > 主题（theme）
 - light
-![Image text]('./src/assets/timeline5.png')
+![Image text]('/src/assets/timeline5.png')
 - dark
-![Image text]('./src/assets/timeline1.png')
+![Image text]('/src/assets/timeline1.png')
 > 布局（mode）
 - left
-![Image text]('./src/assets/timeline1.png')
+![Image text]('/src/assets/timeline1.png')
 - right
-![Image text]('./src/assets/timeline2.png')
+![Image text]('/src/assets/timeline2.png')
 - alternate
-![Image text]('./src/assets/timeline3.png')
+![Image text]('/src/assets/timeline3.png')
 
